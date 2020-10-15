@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bitrix:
+    build: .
+    ports:
+      - 80:80
+      - 3306:3306
+    volumes:
+      - ./public_html:/home/bitrix/www
+      - ./mysql:/var/lib/mysql
