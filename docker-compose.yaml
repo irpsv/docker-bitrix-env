@@ -8,3 +8,4 @@ services:
       - 3306:3306
     volumes:
       - ./public_html:/home/bitrix/www
+    network_mode: host
